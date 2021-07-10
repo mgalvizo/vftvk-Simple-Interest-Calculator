@@ -1,6 +1,7 @@
 function compute() {
   // Get references and values
-  const principal = document.getElementById("principal").value;
+  const principalInput = document.getElementById("principal");
+  const principal = principalInput.value;
   const rate = document.getElementById("rate").value;
   const years = document.getElementById("years").value;
   const result = document.getElementById("result");
@@ -11,7 +12,8 @@ function compute() {
   // Validate principal input
   if (principal <= 0) {
     alert("Enter a positive number");
-    document.getElementById("principal").focus();
+    principalInput.value = "";
+    principalInput.focus();
     return;
   }
   // Update result HTML
