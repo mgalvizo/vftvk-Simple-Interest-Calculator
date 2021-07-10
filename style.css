@@ -6,12 +6,32 @@ body {
 h1 {
   color: grey;
   font-family: verdana;
+  text-align: center;
 }
 .maindiv {
   background-color: white;
   color: black;
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
   padding: 20px;
   border-radius: 25px;
-  align: center;
+  margin: auto;
+}
+#result {
+  display: block;
+  margin: 10px 0;
+}
+table {
+	width: 100%;
+	max-width: 325px;
+	margin: 10px auto;
+}
+td {
+	margin-bottom: 10px;
+	padding: 2px;
+}
+.container {
+	width: 100%;
+	max-width: 325px;
+	margin: 10px auto;
 }
